@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html lang="hr">
+	<head>
+		<title>The Tech Suite</title>
+		<meta charset="UTF-8">
+		<link type="text/css" rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<header id="header">
+			<nav>
+				<figure>
+					<img alt="alt" id="logo" src="pictures/logo.png"/>
+				</figure>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="onama.html">O nama</a></li>
+					<li><a href="unos.html">Unos Proizvoda</a></li>
+					<li><a href="index.html">Kontakt</a></li>
+					<li><a href="http://www.tvz.hr/">Stranice TVZ-a</a></li>
+				</ul>
+			</nav>
+		</header><br>
+		<section>
+			<form action="skripta.php" enctype="multipart/form-data" method="POST" id="forma" name="forma">
+                <input type="hidden" name="MAX_FILE_SIZE" value="1048576" />
+
+				<label for="naziv">Naziv: </label>
+				<input required id="naziv" name="nazivP" type="text"><br />
+				
+				<label for="sifra">Šifra: </label>
+				<input required id="sifra" name="sifraP" type="text"><br />
+				
+				<label for="kategorija">Kategorija: </label>
+				<select id="kategorija" name="kategorijaP">
+					<option value="Grafička Kartica">Grafička Kartica</option>
+					<option value="Monitor">Monitor</option>
+					<option value="Periferija">Periferija</option>
+					<option value="Ostalo">Ostalo</option>
+				</select><br />
+				
+				<textarea required id="opis" placeholder="Kratki opis proizvoda." name="opisP"></textarea><br />
+				
+				<label for="cijena">Cijena: </label>
+				<input required type="text" id="cijena" name="cijenaP">kn<br />
+				
+				<label for="slikaProizvoda">Slika: </label>
+				<input required type="file" value="Odaberi datoteku" id="slikaProizvoda" name="slikaP"><br />
+				
+				<input type="checkbox" id="arhiviraj" name="arhivirajP" value="true">
+				<label for="arhiviraj">Arhiviraj proizvod</label><br />
+				
+				<input class="submit" type="submit" value="Pohrani">
+			</form>
+		</section>
+		<footer>
+			Author: Stjepan Majhen,  E-mail:smajhen@tvz.hr<br>&copy; 2018.godina
+		</footer>
+	</body>
+</html>

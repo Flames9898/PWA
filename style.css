@@ -1,0 +1,79 @@
+* {
+	font-size:120%;
+	margin: 0;
+    padding: 10px;
+	text-align:center;
+}
+body{
+    padding-top:0px;
+}
+#logo{
+	width:100%;
+	max-width:515px;
+}
+#header{
+	padding:0px;
+	background-color: lightblue;
+}
+a:hover {
+	color:darkblue;
+}
+a:visited {
+	color:purple;
+}
+p {
+	text-align:justify;
+	text-justify: inter-word;
+}
+#phpCentre p{
+	text-align:center;
+	text-justify:none;
+	padding:0px;
+}
+#listaCenter p{
+    text-align: center;
+    text-justify: none;
+    padding: 0px;
+}
+figure{
+	padding:0px;
+}
+nav{
+	border: 1px solid black;
+	text-align: right;
+	margin: 1px 0 0 0;
+}
+ul{
+	text-align:right;
+}
+li {
+	text-align:right;
+	font-size:75%;
+	display:inline-block;
+	list-style-type: none;
+    margin: 0;
+    padding: 10px;
+	
+}
+p{
+	float:clear;
+}
+footer{
+	font-size:50%;
+	color:gray;
+}
+.onama {
+	text-align:left;
+	font-size:75%;
+}
+#forma{
+	font-size:100%;
+}
+.button, .submit {
+	padding:2px;
+}
+input,textarea,select{
+	margin:2px;
+	font-size:75%;
+	padding:0px;
+}
